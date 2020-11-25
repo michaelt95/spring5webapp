@@ -24,6 +24,10 @@ public class Author {
     public Author() {
     }
 
+    public long countBooks(){
+        return this.getBooks().stream().count();
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -62,7 +66,6 @@ public class Author {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", books=" + books +
                 '}';
     }
 
